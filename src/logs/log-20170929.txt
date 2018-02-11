@@ -1,0 +1,248 @@
+2017-09-29 19:45:34.220 +01:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-09-29 19:45:34.220 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-09-29 19:45:34.524 +01:00 [Information] Request finished in 329.2682ms 200 
+2017-09-29 19:45:35.210 +01:00 [Information] Request finished in 1047.8013ms 404 
+2017-09-29 19:47:15.809 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger  
+2017-09-29 19:47:15.817 +01:00 [Information] Request finished in 12.1872ms 404 
+2017-09-29 19:47:23.320 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/swagger  
+2017-09-29 19:47:23.328 +01:00 [Information] Request finished in 8.978ms 404 
+2017-09-29 19:47:34.898 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api  
+2017-09-29 19:47:34.922 +01:00 [Information] Request finished in 25.7965ms 404 
+2017-09-29 19:50:09.610 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Get  
+2017-09-29 19:50:09.614 +01:00 [Information] Request finished in 7.6103ms 404 
+2017-09-29 19:50:16.377 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/BlockCycle/Get  
+2017-09-29 19:50:16.546 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Get (CroydonPestControl.API)" with arguments (null) - ModelState is Valid
+2017-09-29 19:50:16.554 +01:00 [Information] Calling Get from BlockCycleController
+2017-09-29 19:50:16.582 +01:00 [Information] Calling stored procedure dbo.GetBlockCyclesAsync 
+2017-09-29 19:50:18.166 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 19:50:18.414 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlockCycleController.Get (CroydonPestControl.API)" in 1939.3468ms
+2017-09-29 19:50:18.422 +01:00 [Information] Request finished in 2047.9897ms 200 application/json; charset=utf-8
+2017-09-29 19:50:18.450 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/favicon.ico  
+2017-09-29 19:50:18.458 +01:00 [Information] Request finished in 10.0887ms 404 
+2017-09-29 19:50:27.476 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/BlockCycleBlock/Get  
+2017-09-29 19:50:27.484 +01:00 [Information] Request finished in 9.6061ms 404 
+2017-09-29 19:50:32.968 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Block/Get  
+2017-09-29 19:50:32.976 +01:00 [Information] Request finished in 8.6623ms 404 
+2017-09-29 19:50:55.785 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/index.html  
+2017-09-29 19:50:55.789 +01:00 [Information] Request finished in 5.0943ms 404 
+2017-09-29 19:51:02.507 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/swagger/index.html  
+2017-09-29 19:51:02.515 +01:00 [Information] Request finished in 18.3261ms 404 
+2017-09-29 19:52:37.689 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/swagger/ui/index.html  
+2017-09-29 19:52:37.693 +01:00 [Information] Request finished in 13.7338ms 404 
+2017-09-29 19:52:42.023 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/index.html  
+2017-09-29 19:52:42.035 +01:00 [Information] Request finished in 12.3412ms 200 text/html
+2017-09-29 19:52:42.067 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/typography.css  
+2017-09-29 19:52:42.067 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/object-assign-pollyfill.js  
+2017-09-29 19:52:42.071 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/screen.css  
+2017-09-29 19:52:42.075 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/reset.css  
+2017-09-29 19:52:42.103 +01:00 [Information] Sending file. Request path: '"/css/reset.css"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.103 +01:00 [Information] Sending file. Request path: '"/lib/object-assign-pollyfill.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.103 +01:00 [Information] Sending file. Request path: '"/css/typography.css"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.103 +01:00 [Information] Sending file. Request path: '"/css/screen.css"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.155 +01:00 [Information] Request finished in 77.3201ms 200 application/javascript
+2017-09-29 19:52:42.167 +01:00 [Information] Request finished in 103.0685ms 200 text/css
+2017-09-29 19:52:42.175 +01:00 [Information] Request finished in 107.1342ms 200 text/css
+2017-09-29 19:52:42.179 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.wiggle.min.js  
+2017-09-29 19:52:42.179 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/handlebars-4.0.5.js  
+2017-09-29 19:52:42.183 +01:00 [Information] Request finished in 112.2111ms 200 text/css
+2017-09-29 19:52:42.187 +01:00 [Information] Sending file. Request path: '"/lib/jquery.wiggle.min.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.211 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/lodash.min.js  
+2017-09-29 19:52:42.219 +01:00 [Information] Sending file. Request path: '"/lib/lodash.min.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.223 +01:00 [Information] Sending file. Request path: '"/lib/handlebars-4.0.5.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.239 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.ba-bbq.min.js  
+2017-09-29 19:52:42.243 +01:00 [Information] Request finished in 53.7886ms 200 application/javascript
+2017-09-29 19:52:42.251 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/backbone-min.js  
+2017-09-29 19:52:42.255 +01:00 [Information] Request finished in 76.2988ms 200 application/javascript
+2017-09-29 19:52:42.259 +01:00 [Information] Sending file. Request path: '"/lib/jquery.ba-bbq.min.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.283 +01:00 [Information] Sending file. Request path: '"/lib/backbone-min.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.291 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/swagger-ui.min.js  
+2017-09-29 19:52:42.307 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery-1.8.0.min.js  
+2017-09-29 19:52:42.315 +01:00 [Information] Request finished in 126.2372ms 200 application/javascript
+2017-09-29 19:52:42.319 +01:00 [Information] Sending file. Request path: '"/swagger-ui.min.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.323 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/highlight.9.1.0.pack.js  
+2017-09-29 19:52:42.323 +01:00 [Information] Request finished in 59.9889ms 200 application/javascript
+2017-09-29 19:52:42.327 +01:00 [Information] Sending file. Request path: '"/lib/jquery-1.8.0.min.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.339 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/highlight.9.1.0.pack_extended.js  
+2017-09-29 19:52:42.351 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.slideto.min.js  
+2017-09-29 19:52:42.359 +01:00 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.375 +01:00 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack_extended.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.379 +01:00 [Information] Sending file. Request path: '"/lib/jquery.slideto.min.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.395 +01:00 [Information] Request finished in 54.5535ms 200 application/javascript
+2017-09-29 19:52:42.399 +01:00 [Information] Request finished in 113.512ms 200 application/javascript
+2017-09-29 19:52:42.407 +01:00 [Information] Request finished in 75.8346ms 200 application/javascript
+2017-09-29 19:52:42.415 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jsoneditor.min.js  
+2017-09-29 19:52:42.419 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/marked.js  
+2017-09-29 19:52:42.423 +01:00 [Information] Sending file. Request path: '"/lib/jsoneditor.min.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.427 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/swagger-oauth.js  
+2017-09-29 19:52:42.447 +01:00 [Information] Sending file. Request path: '"/lib/swagger-oauth.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.451 +01:00 [Information] Request finished in 89.4722ms 200 application/javascript
+2017-09-29 19:52:42.487 +01:00 [Information] Sending file. Request path: '"/lib/marked.js"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.507 +01:00 [Information] Request finished in 93.7228ms 200 application/javascript
+2017-09-29 19:52:42.515 +01:00 [Information] Request finished in 73.1527ms 200 application/javascript
+2017-09-29 19:52:42.531 +01:00 [Information] Request finished in 340.6155ms 200 application/javascript
+2017-09-29 19:52:42.551 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/images/logo_small.png  
+2017-09-29 19:52:42.605 +01:00 [Information] Sending file. Request path: '"/images/logo_small.png"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.623 +01:00 [Information] Request finished in 123.5369ms 200 application/javascript
+2017-09-29 19:52:42.627 +01:00 [Information] Request finished in 358.2075ms 200 application/javascript
+2017-09-29 19:52:42.655 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/print.css  
+2017-09-29 19:52:42.659 +01:00 [Information] Sending file. Request path: '"/css/print.css"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.675 +01:00 [Information] Request finished in 113.5847ms 200 image/png
+2017-09-29 19:52:42.679 +01:00 [Information] Request finished in 55.9523ms 200 text/css
+2017-09-29 19:52:42.739 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/v1/swagger.json  
+2017-09-29 19:52:42.763 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/images/favicon-32x32.png  
+2017-09-29 19:52:42.767 +01:00 [Information] Sending file. Request path: '"/images/favicon-32x32.png"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.787 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/images/favicon-16x16.png  
+2017-09-29 19:52:42.791 +01:00 [Information] Request finished in 26.1068ms 200 image/png
+2017-09-29 19:52:42.799 +01:00 [Information] Sending file. Request path: '"/images/favicon-16x16.png"'. Physical path: '"N/A"'
+2017-09-29 19:52:42.819 +01:00 [Information] Request finished in 37.3909ms 200 image/png
+2017-09-29 19:52:43.107 +01:00 [Information] Request finished in 366.9279ms 200 application/json
+2017-09-29 19:57:25.583 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-09-29 19:57:26.139 +01:00 [Information] Request finished in 582.8207ms 404 
+2017-09-29 19:57:33.101 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/index.html  
+2017-09-29 19:57:33.117 +01:00 [Information] Request finished in 15.1217ms 200 text/html
+2017-09-29 19:57:33.145 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/reset.css  
+2017-09-29 19:57:33.149 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery-1.8.0.min.js  
+2017-09-29 19:57:33.149 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.slideto.min.js  
+2017-09-29 19:57:33.157 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/typography.css  
+2017-09-29 19:57:33.173 +01:00 [Information] The file "/css/reset.css" was not modified
+2017-09-29 19:57:33.173 +01:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2017-09-29 19:57:33.173 +01:00 [Information] The file "/css/typography.css" was not modified
+2017-09-29 19:57:33.173 +01:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2017-09-29 19:57:33.181 +01:00 [Information] Request finished in 24.3121ms 304 text/css
+2017-09-29 19:57:33.181 +01:00 [Information] Request finished in 32.7321ms 304 application/javascript
+2017-09-29 19:57:33.181 +01:00 [Information] Request finished in 36.0017ms 304 text/css
+2017-09-29 19:57:33.181 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/screen.css  
+2017-09-29 19:57:33.181 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/object-assign-pollyfill.js  
+2017-09-29 19:57:33.181 +01:00 [Information] Request finished in 32.7321ms 304 application/javascript
+2017-09-29 19:57:33.181 +01:00 [Information] The file "/css/screen.css" was not modified
+2017-09-29 19:57:33.181 +01:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2017-09-29 19:57:33.181 +01:00 [Information] Request finished in 0.3485ms 304 text/css
+2017-09-29 19:57:33.181 +01:00 [Information] Request finished in 0.2884ms 304 application/javascript
+2017-09-29 19:57:33.205 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/backbone-min.js  
+2017-09-29 19:57:33.205 +01:00 [Information] The file "/lib/backbone-min.js" was not modified
+2017-09-29 19:57:33.205 +01:00 [Information] Request finished in 0.4676ms 304 application/javascript
+2017-09-29 19:57:33.209 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/lodash.min.js  
+2017-09-29 19:57:33.209 +01:00 [Information] The file "/lib/lodash.min.js" was not modified
+2017-09-29 19:57:33.209 +01:00 [Information] Request finished in 1.127ms 304 application/javascript
+2017-09-29 19:57:33.209 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.ba-bbq.min.js  
+2017-09-29 19:57:33.209 +01:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2017-09-29 19:57:33.209 +01:00 [Information] Request finished in 0.3362ms 304 application/javascript
+2017-09-29 19:57:33.209 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.wiggle.min.js  
+2017-09-29 19:57:33.209 +01:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2017-09-29 19:57:33.209 +01:00 [Information] Request finished in 0.3874ms 304 application/javascript
+2017-09-29 19:57:33.209 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/swagger-ui.min.js  
+2017-09-29 19:57:33.209 +01:00 [Information] The file "/swagger-ui.min.js" was not modified
+2017-09-29 19:57:33.213 +01:00 [Information] Request finished in 0.3935ms 304 application/javascript
+2017-09-29 19:57:33.209 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/handlebars-4.0.5.js  
+2017-09-29 19:57:33.225 +01:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2017-09-29 19:57:33.225 +01:00 [Information] Request finished in 15.0241ms 304 application/javascript
+2017-09-29 19:57:33.237 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/highlight.9.1.0.pack.js  
+2017-09-29 19:57:33.237 +01:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2017-09-29 19:57:33.237 +01:00 [Information] Request finished in 0.615ms 304 application/javascript
+2017-09-29 19:57:33.237 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/highlight.9.1.0.pack_extended.js  
+2017-09-29 19:57:33.237 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jsoneditor.min.js  
+2017-09-29 19:57:33.237 +01:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2017-09-29 19:57:33.237 +01:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2017-09-29 19:57:33.237 +01:00 [Information] Request finished in 0.3863ms 304 application/javascript
+2017-09-29 19:57:33.237 +01:00 [Information] Request finished in 0.4826ms 304 application/javascript
+2017-09-29 19:57:33.249 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/swagger-oauth.js  
+2017-09-29 19:57:33.249 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/marked.js  
+2017-09-29 19:57:33.249 +01:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2017-09-29 19:57:33.249 +01:00 [Information] The file "/lib/marked.js" was not modified
+2017-09-29 19:57:33.249 +01:00 [Information] Request finished in 0.456ms 304 application/javascript
+2017-09-29 19:57:33.249 +01:00 [Information] Request finished in 2.0616ms 304 application/javascript
+2017-09-29 19:57:33.261 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/images/logo_small.png  
+2017-09-29 19:57:33.261 +01:00 [Information] The file "/images/logo_small.png" was not modified
+2017-09-29 19:57:33.261 +01:00 [Information] Request finished in 0.4812ms 304 image/png
+2017-09-29 19:57:33.265 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/print.css  
+2017-09-29 19:57:33.269 +01:00 [Information] The file "/css/print.css" was not modified
+2017-09-29 19:57:33.269 +01:00 [Information] Request finished in 0.5212ms 304 text/css
+2017-09-29 19:57:33.493 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/v1/swagger.json  
+2017-09-29 19:57:33.993 +01:00 [Information] Request finished in 499.1654ms 200 application/json
+2017-09-29 20:03:42.930 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/images/throbber.gif  
+2017-09-29 20:03:42.934 +01:00 [Information] Sending file. Request path: '"/images/throbber.gif"'. Physical path: '"N/A"'
+2017-09-29 20:03:42.958 +01:00 [Information] Request finished in 29.1279ms 200 image/gif
+2017-09-29 20:03:43.990 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/BlockCycle/Get  
+2017-09-29 20:03:44.134 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Get (CroydonPestControl.API)" with arguments (null) - ModelState is Valid
+2017-09-29 20:03:44.138 +01:00 [Information] Calling Get from BlockCycleController
+2017-09-29 20:03:44.146 +01:00 [Information] Calling stored procedure dbo.GetBlockCyclesAsync 
+2017-09-29 20:03:45.206 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:03:45.274 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlockCycleController.Get (CroydonPestControl.API)" in 1214.2021ms
+2017-09-29 20:03:45.274 +01:00 [Information] Request finished in 1283.4132ms 200 application/json; charset=utf-8
+2017-09-29 20:50:18.843 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/1  
+2017-09-29 20:50:18.940 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["1"]) - ModelState is Valid
+2017-09-29 20:50:18.941 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 20:50:18.945 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 1
+2017-09-29 20:50:19.424 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:50:19.427 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 577.9092ms
+2017-09-29 20:50:19.427 +01:00 [Information] Request finished in 584.7775ms 200 application/json; charset=utf-8
+2017-09-29 20:50:32.397 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/2  
+2017-09-29 20:50:32.403 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["2"]) - ModelState is Valid
+2017-09-29 20:50:32.403 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 20:50:32.404 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 2
+2017-09-29 20:50:32.442 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:50:32.442 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 42.1034ms
+2017-09-29 20:50:32.442 +01:00 [Information] Request finished in 45.6ms 200 application/json; charset=utf-8
+2017-09-29 20:50:37.212 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/3  
+2017-09-29 20:50:37.212 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["3"]) - ModelState is Valid
+2017-09-29 20:50:37.213 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 20:50:37.213 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 3
+2017-09-29 20:50:37.242 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:50:37.242 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 30.2564ms
+2017-09-29 20:50:37.242 +01:00 [Information] Request finished in 30.8281ms 200 application/json; charset=utf-8
+2017-09-29 20:50:39.403 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/4  
+2017-09-29 20:50:39.404 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["4"]) - ModelState is Valid
+2017-09-29 20:50:39.404 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 20:50:39.404 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 4
+2017-09-29 20:50:39.431 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:50:39.431 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 26.9154ms
+2017-09-29 20:50:39.431 +01:00 [Information] Request finished in 27.7718ms 200 application/json; charset=utf-8
+2017-09-29 20:50:41.300 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/5  
+2017-09-29 20:50:41.301 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["5"]) - ModelState is Valid
+2017-09-29 20:50:41.301 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 20:50:41.301 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 5
+2017-09-29 20:50:41.332 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:50:41.332 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 31.9187ms
+2017-09-29 20:50:41.332 +01:00 [Information] Request finished in 32.5621ms 200 application/json; charset=utf-8
+2017-09-29 20:50:43.260 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/6  
+2017-09-29 20:50:43.260 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["6"]) - ModelState is Valid
+2017-09-29 20:50:43.261 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 20:50:43.261 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 6
+2017-09-29 20:50:43.299 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:50:43.299 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 38.7887ms
+2017-09-29 20:50:43.299 +01:00 [Information] Request finished in 39.571ms 200 application/json; charset=utf-8
+2017-09-29 20:50:46.419 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/7  
+2017-09-29 20:50:46.420 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["7"]) - ModelState is Valid
+2017-09-29 20:50:46.420 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 20:50:46.420 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 7
+2017-09-29 20:50:46.452 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:50:46.452 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 31.9518ms
+2017-09-29 20:50:46.452 +01:00 [Information] Request finished in 32.7038ms 200 application/json; charset=utf-8
+2017-09-29 20:50:48.118 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/1  
+2017-09-29 20:50:48.119 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["1"]) - ModelState is Valid
+2017-09-29 20:50:48.119 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 20:50:48.119 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 1
+2017-09-29 20:50:48.144 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 20:50:48.144 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 26.1682ms
+2017-09-29 20:50:48.145 +01:00 [Information] Request finished in 27.0871ms 200 application/json; charset=utf-8
+2017-09-29 21:03:11.449 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/1  
+2017-09-29 21:03:11.449 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["1"]) - ModelState is Valid
+2017-09-29 21:03:11.449 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 21:03:11.449 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 1
+2017-09-29 21:03:11.728 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 21:03:11.728 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 279.278ms
+2017-09-29 21:03:11.728 +01:00 [Information] Request finished in 279.9466ms 200 application/json; charset=utf-8
+2017-09-29 21:08:47.014 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/1  
+2017-09-29 21:08:47.015 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["1"]) - ModelState is Valid
+2017-09-29 21:08:47.015 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 21:08:47.015 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 1
+2017-09-29 21:08:47.055 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 21:08:47.056 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 40.3145ms
+2017-09-29 21:08:47.056 +01:00 [Information] Request finished in 41.2685ms 200 application/json; charset=utf-8
+2017-09-29 21:08:52.298 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/1  
+2017-09-29 21:08:52.299 +01:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["1"]) - ModelState is Valid
+2017-09-29 21:08:52.299 +01:00 [Information] Calling Getfrom BlocksController
+2017-09-29 21:08:52.299 +01:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 1
+2017-09-29 21:08:52.327 +01:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-09-29 21:08:52.327 +01:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 28.6675ms
+2017-09-29 21:08:52.328 +01:00 [Information] Request finished in 29.1938ms 200 application/json; charset=utf-8

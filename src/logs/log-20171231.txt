@@ -1,0 +1,703 @@
+2017-12-31 17:33:45.481 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 17:33:45.481 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 17:33:45.836 +00:00 [Information] Request finished in 377.5043ms 200 
+2017-12-31 17:33:46.479 +00:00 [Information] Request finished in 1066.7923ms 404 
+2017-12-31 17:33:56.851 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/1  
+2017-12-31 17:33:57.120 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["1"]) - ModelState is Valid
+2017-12-31 17:33:57.130 +00:00 [Information] Calling Getfrom BlocksController
+2017-12-31 17:33:57.181 +00:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 1
+2017-12-31 17:33:58.309 +00:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-12-31 17:33:58.587 +00:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 1649.8808ms
+2017-12-31 17:33:58.598 +00:00 [Information] Request finished in 1746.4927ms 200 application/json; charset=utf-8
+2017-12-31 17:34:06.439 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/GetUnassigned/1  
+2017-12-31 17:34:06.462 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.GetUnassigned (CroydonPestControl.API)" with arguments (["1"]) - ModelState is Valid
+2017-12-31 17:34:06.468 +00:00 [Information] Calling Get Unassigned from BlocksController
+2017-12-31 17:34:06.473 +00:00 [Information] Calling stored procedure [BlockCycle].[GetUnassignedBlocksByBlockCycleId] with blockCycleId : 1
+2017-12-31 17:34:06.942 +00:00 [Error] An unhandled exception has occurred: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel, CroydonPestControl.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CroydonPestControl.AppServices.Models.Block, CroydonPestControl.AppServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel, CroydonPestControl.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CroydonPestControl.AppServices.Models.Block, CroydonPestControl.AppServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UnassignedBlockViewModel -> Block
+CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel -> CroydonPestControl.AppServices.Models.Block
+   at lambda_method(Closure , UnassignedBlockViewModel , Block , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CroydonPestControl.AppServices.BlocksAppService.<GetUnnassignedBlocksByBlockCycleIdAsync>d__6.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\BlocksAppService.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.BlocksController.<GetUnassigned>d__5.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\BlocksController.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 17:34:06.974 +00:00 [Information] Request finished in 530.149ms 500 application/json
+2017-12-31 17:48:25.339 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 236
+2017-12-31 17:48:25.478 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 17:48:25.497 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 2, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 3, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 17:48:25.630 +00:00 [Error] There was an error reflecting type 'CroydonPestControl.AppServices.Models.AddBlockCycleRequest'.
+2017-12-31 17:48:25.635 +00:00 [Information] Calling stored procedure BlockCycle.AddBlockCycle with requestXml:
+2017-12-31 17:49:38.464 +00:00 [Error] CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+2017-12-31 17:49:38.564 +00:00 [Error] An unhandled exception has occurred: CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+System.Exception: CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+   at CroydonPestControl.Infrastructure.BlockCycleRepository.<AddBlockCycleAsync>d__2.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.Infrastructure\BlockCycleRepository.cs:line 53
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.AppServices.BlockCycleAppService.<AddBlockCycleAsync>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\BlockCycleAppService.cs:line 24
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.BlockCycleController.<Add>d__6.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\BlockCycleController.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 17:49:38.574 +00:00 [Information] Request finished in 73235.4746ms 500 application/json
+2017-12-31 17:50:09.181 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 236
+2017-12-31 17:50:09.194 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 17:50:09.201 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 2, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 3, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 17:50:55.098 +00:00 [Error] There was an error reflecting type 'CroydonPestControl.AppServices.Models.AddBlockCycleRequest'.
+2017-12-31 17:58:49.252 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 17:58:49.252 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 17:58:49.448 +00:00 [Information] Request finished in 211.2106ms 200 
+2017-12-31 17:58:49.874 +00:00 [Information] Request finished in 661.6274ms 404 
+2017-12-31 17:58:58.325 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 236
+2017-12-31 17:58:58.858 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 17:58:58.878 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 2, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 3, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 17:59:04.207 +00:00 [Error] There was an error reflecting type 'CroydonPestControl.AppServices.Models.AddBlockCycleRequest'.
+2017-12-31 18:08:20.125 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 18:08:20.125 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 18:08:20.394 +00:00 [Information] Request finished in 290.6542ms 200 
+2017-12-31 18:08:20.992 +00:00 [Information] Request finished in 914.5657ms 404 
+2017-12-31 18:08:26.481 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 236
+2017-12-31 18:08:27.116 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 18:08:27.145 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 2, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 3, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 18:08:42.847 +00:00 [Error] There was an error reflecting type 'CroydonPestControl.AppServices.Models.AddBlockCycleRequest'.
+2017-12-31 18:08:50.194 +00:00 [Information] Calling stored procedure BlockCycle.AddBlockCycle with requestXml:
+2017-12-31 18:08:52.514 +00:00 [Error] CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+2017-12-31 18:08:52.770 +00:00 [Error] An unhandled exception has occurred: CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+System.Exception: CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+   at CroydonPestControl.Infrastructure.BlockCycleRepository.<AddBlockCycleAsync>d__2.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.Infrastructure\BlockCycleRepository.cs:line 53
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.AppServices.BlockCycleAppService.<AddBlockCycleAsync>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\BlockCycleAppService.cs:line 24
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.BlockCycleController.<Add>d__6.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\BlockCycleController.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 18:08:52.844 +00:00 [Information] Request finished in 26362.0562ms 500 application/json
+2017-12-31 18:09:08.433 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 236
+2017-12-31 18:09:08.441 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 18:09:08.444 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 2, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 3, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 18:10:43.971 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 18:10:43.971 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 18:10:44.179 +00:00 [Information] Request finished in 228.7859ms 200 
+2017-12-31 18:10:44.571 +00:00 [Information] Request finished in 640.5095ms 404 
+2017-12-31 18:10:51.084 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 236
+2017-12-31 18:10:51.628 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 18:10:51.646 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 2, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 3, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 22:07:33.643 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 22:07:33.643 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 22:07:33.855 +00:00 [Information] Request finished in 241.9094ms 200 
+2017-12-31 22:07:34.347 +00:00 [Information] Request finished in 759.8661ms 404 
+2017-12-31 22:07:40.991 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 236
+2017-12-31 22:07:41.599 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 22:07:41.619 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 2, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 3, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 22:52:55.636 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 22:52:55.636 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 22:52:55.823 +00:00 [Information] Request finished in 205.6653ms 200 
+2017-12-31 22:52:56.240 +00:00 [Information] Request finished in 645.0939ms 404 
+2017-12-31 22:53:34.653 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 243
+2017-12-31 22:53:35.349 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 22:53:35.378 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 670, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 698, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1022, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 22:53:35.893 +00:00 [Information] Calling stored procedure BlockCycle.AddBlockCycle with requestXml:<?xml version="1.0" encoding="utf-16"?>
+<AddBlockCycleRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StartDate>2018-01-13T00:00:00</StartDate>
+  <Blocks>
+    <AddBlockToBlockCycleRequest>
+      <BlockCycleId>0</BlockCycleId>
+      <BlockId>670</BlockId>
+      <StartDate>2018-01-13T00:00:00</StartDate>
+    </AddBlockToBlockCycleRequest>
+    <AddBlockToBlockCycleRequest>
+      <BlockCycleId>0</BlockCycleId>
+      <BlockId>698</BlockId>
+      <StartDate>2018-01-14T00:00:00</StartDate>
+    </AddBlockToBlockCycleRequest>
+    <AddBlockToBlockCycleRequest>
+      <BlockCycleId>0</BlockCycleId>
+      <BlockId>1022</BlockId>
+      <StartDate>2018-01-15T00:00:00</StartDate>
+    </AddBlockToBlockCycleRequest>
+  </Blocks>
+</AddBlockCycleRequest>
+2017-12-31 22:53:36.617 +00:00 [Error] CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+2017-12-31 22:53:36.923 +00:00 [Error] An unhandled exception has occurred: CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+System.Exception: CroydonPestControl.Infrastructure.BlockCycleRepository.WithConnection() experienced a SQL exception (not a timeout)
+   at CroydonPestControl.Infrastructure.BlockCycleRepository.<AddBlockCycleAsync>d__2.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.Infrastructure\BlockCycleRepository.cs:line 53
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.AppServices.BlockCycleAppService.<AddBlockCycleAsync>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\BlockCycleAppService.cs:line 24
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.BlockCycleController.<Add>d__6.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\BlockCycleController.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 22:53:37.002 +00:00 [Information] Request finished in 2348.4036ms 500 application/json
+2017-12-31 22:54:45.143 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 243
+2017-12-31 22:54:45.151 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 22:54:45.159 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 670, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 698, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1022, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 22:55:28.022 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 22:55:28.022 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 22:55:28.230 +00:00 [Information] Request finished in 229.9928ms 200 
+2017-12-31 22:55:28.650 +00:00 [Information] Request finished in 668.4066ms 404 
+2017-12-31 22:55:30.753 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 243
+2017-12-31 22:55:31.209 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 22:55:31.225 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 670, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 698, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1022, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 22:59:06.092 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 22:59:06.092 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 22:59:06.292 +00:00 [Information] Request finished in 218.9302ms 200 
+2017-12-31 22:59:06.860 +00:00 [Information] Request finished in 813.2198ms 404 
+2017-12-31 22:59:11.598 +00:00 [Information] Request starting HTTP/1.1 POST http://localhost:59004/api/BlockCycle/Add application/json 243
+2017-12-31 22:59:12.118 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" with arguments (["CroydonPestControl.AppServices.Models.AddBlockCycleRequest"]) - ModelState is Valid
+2017-12-31 22:59:12.138 +00:00 [Information] Calling Add from BlockCycleController with request : AddBlockCycleRequest { StartDate: 01/13/2018 00:00:00, Blocks: [AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 670, StartDate: 01/13/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 698, StartDate: 01/14/2018 00:00:00 }, AddBlockToBlockCycleRequest { BlockCycleId: 0, BlockId: 1022, StartDate: 01/15/2018 00:00:00 }] }
+2017-12-31 22:59:15.435 +00:00 [Information] Calling stored procedure BlockCycle.AddBlockCycle with requestXml:<?xml version="1.0" encoding="utf-16"?>
+<AddBlockCycleRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StartDate>2018-01-13T00:00:00</StartDate>
+  <Blocks>
+    <AddBlockToBlockCycleRequest>
+      <BlockCycleId>0</BlockCycleId>
+      <BlockId>670</BlockId>
+      <StartDate>2018-01-13T00:00:00</StartDate>
+    </AddBlockToBlockCycleRequest>
+    <AddBlockToBlockCycleRequest>
+      <BlockCycleId>0</BlockCycleId>
+      <BlockId>698</BlockId>
+      <StartDate>2018-01-14T00:00:00</StartDate>
+    </AddBlockToBlockCycleRequest>
+    <AddBlockToBlockCycleRequest>
+      <BlockCycleId>0</BlockCycleId>
+      <BlockId>1022</BlockId>
+      <StartDate>2018-01-15T00:00:00</StartDate>
+    </AddBlockToBlockCycleRequest>
+  </Blocks>
+</AddBlockCycleRequest>
+2017-12-31 22:59:16.116 +00:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-12-31 22:59:16.132 +00:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlockCycleController.Add (CroydonPestControl.API)" in 4441.552ms
+2017-12-31 22:59:16.136 +00:00 [Information] Request finished in 4539.7029ms 404 
+2017-12-31 23:16:33.286 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 23:16:33.286 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 23:16:33.554 +00:00 [Information] Request finished in 288.1607ms 200 
+2017-12-31 23:16:34.078 +00:00 [Information] Request finished in 846.3459ms 404 
+2017-12-31 23:17:29.082 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/BlockCycle/Get  
+2017-12-31 23:17:29.230 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlockCycleController.Get (CroydonPestControl.API)" with arguments (null) - ModelState is Valid
+2017-12-31 23:17:29.238 +00:00 [Information] Calling Get from BlockCycleController
+2017-12-31 23:17:29.250 +00:00 [Information] Calling stored procedure dbo.GetBlockCyclesAsync 
+2017-12-31 23:17:30.086 +00:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-12-31 23:17:30.316 +00:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlockCycleController.Get (CroydonPestControl.API)" in 1162.114ms
+2017-12-31 23:17:30.320 +00:00 [Information] Request finished in 1241.4732ms 200 application/json; charset=utf-8
+2017-12-31 23:18:14.712 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/8  
+2017-12-31 23:18:14.864 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["8"]) - ModelState is Valid
+2017-12-31 23:18:14.868 +00:00 [Information] Calling Getfrom BlocksController
+2017-12-31 23:18:14.872 +00:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 8
+2017-12-31 23:18:15.000 +00:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-12-31 23:18:15.016 +00:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 289.879ms
+2017-12-31 23:18:15.024 +00:00 [Information] Request finished in 315.0318ms 200 application/json; charset=utf-8
+2017-12-31 23:18:36.691 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/GetUnassigned/8  
+2017-12-31 23:18:36.699 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.GetUnassigned (CroydonPestControl.API)" with arguments (["8"]) - ModelState is Valid
+2017-12-31 23:18:36.703 +00:00 [Information] Calling Get Unassigned from BlocksController
+2017-12-31 23:18:36.711 +00:00 [Information] Calling stored procedure [BlockCycle].[GetUnassignedBlocksByBlockCycleId] with blockCycleId : 8
+2017-12-31 23:18:36.995 +00:00 [Error] An unhandled exception has occurred: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel, CroydonPestControl.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CroydonPestControl.AppServices.Models.Block, CroydonPestControl.AppServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel, CroydonPestControl.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CroydonPestControl.AppServices.Models.Block, CroydonPestControl.AppServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UnassignedBlockViewModel -> Block
+CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel -> CroydonPestControl.AppServices.Models.Block
+   at lambda_method(Closure , UnassignedBlockViewModel , Block , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CroydonPestControl.AppServices.BlocksAppService.<GetUnnassignedBlocksByBlockCycleIdAsync>d__6.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\BlocksAppService.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.BlocksController.<GetUnassigned>d__5.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\BlocksController.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 23:18:37.015 +00:00 [Information] Request finished in 326.5832ms 500 application/json
+2017-12-31 23:24:52.560 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 23:24:52.560 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 23:24:52.768 +00:00 [Information] Request finished in 225.6336ms 200 
+2017-12-31 23:24:53.320 +00:00 [Information] Request finished in 809.6034ms 404 
+2017-12-31 23:24:57.288 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/GetUnassigned/8  
+2017-12-31 23:24:57.536 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.GetUnassigned (CroydonPestControl.API)" with arguments (["8"]) - ModelState is Valid
+2017-12-31 23:24:57.544 +00:00 [Information] Calling Get Unassigned from BlocksController
+2017-12-31 23:24:57.568 +00:00 [Information] Calling stored procedure [BlockCycle].[GetUnassignedBlocksByBlockCycleId] with blockCycleId : 8
+2017-12-31 23:24:58.608 +00:00 [Error] An unhandled exception has occurred: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel, CroydonPestControl.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CroydonPestControl.AppServices.Models.UnassignedBlockViewModel, CroydonPestControl.AppServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel, CroydonPestControl.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CroydonPestControl.AppServices.Models.UnassignedBlockViewModel, CroydonPestControl.AppServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UnassignedBlockViewModel -> UnassignedBlockViewModel
+CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel -> CroydonPestControl.AppServices.Models.UnassignedBlockViewModel
+   at lambda_method(Closure , UnassignedBlockViewModel , UnassignedBlockViewModel , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CroydonPestControl.AppServices.BlocksAppService.<GetUnassignedBlocksByBlockCycleIdAsync>d__6.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\BlocksAppService.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.BlocksController.<GetUnassigned>d__5.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\BlocksController.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 23:24:58.852 +00:00 [Information] Request finished in 1557.5796ms 500 application/json
+2017-12-31 23:25:20.909 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/GetUnassigned/8  
+2017-12-31 23:25:20.925 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.GetUnassigned (CroydonPestControl.API)" with arguments (["8"]) - ModelState is Valid
+2017-12-31 23:25:20.929 +00:00 [Information] Calling Get Unassigned from BlocksController
+2017-12-31 23:25:47.188 +00:00 [Information] Calling stored procedure [BlockCycle].[GetUnassignedBlocksByBlockCycleId] with blockCycleId : 8
+2017-12-31 23:26:26.052 +00:00 [Error] An unhandled exception has occurred: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel, CroydonPestControl.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CroydonPestControl.AppServices.Models.UnassignedBlockViewModel, CroydonPestControl.AppServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel, CroydonPestControl.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CroydonPestControl.AppServices.Models.UnassignedBlockViewModel, CroydonPestControl.AppServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UnassignedBlockViewModel -> UnassignedBlockViewModel
+CroydonPestControl.Infrastructure.Models.UnassignedBlockViewModel -> CroydonPestControl.AppServices.Models.UnassignedBlockViewModel
+   at lambda_method(Closure , UnassignedBlockViewModel , UnassignedBlockViewModel , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CroydonPestControl.AppServices.BlocksAppService.<GetUnassignedBlocksByBlockCycleIdAsync>d__6.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\BlocksAppService.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.BlocksController.<GetUnassigned>d__5.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\BlocksController.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 23:26:43.796 +00:00 [Information] Request finished in 82884.2591ms 500 application/json
+2017-12-31 23:35:04.349 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 23:35:04.349 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 23:35:04.533 +00:00 [Information] Request finished in 202.8391ms 200 
+2017-12-31 23:35:04.957 +00:00 [Information] Request finished in 649.8903ms 404 
+2017-12-31 23:35:13.947 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/Get/8  
+2017-12-31 23:35:14.191 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" with arguments (["8"]) - ModelState is Valid
+2017-12-31 23:35:14.199 +00:00 [Information] Calling Getfrom BlocksController
+2017-12-31 23:35:14.223 +00:00 [Information] Calling stored procedure [BlockCycle].[GetBlocksByBlockCycleId] with blockCycleId : 8
+2017-12-31 23:35:15.047 +00:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-12-31 23:35:15.300 +00:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.Get (CroydonPestControl.API)" in 1276.1161ms
+2017-12-31 23:35:15.308 +00:00 [Information] Request finished in 1357.8254ms 200 application/json; charset=utf-8
+2017-12-31 23:39:16.674 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 23:39:16.674 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 23:39:16.858 +00:00 [Information] Request finished in 191.8236ms 200 
+2017-12-31 23:39:17.270 +00:00 [Information] Request finished in 633.2541ms 404 
+2017-12-31 23:39:34.849 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Blocks/GetUnassigned/8  
+2017-12-31 23:39:35.097 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.BlocksController.GetUnassigned (CroydonPestControl.API)" with arguments (["8"]) - ModelState is Valid
+2017-12-31 23:39:35.105 +00:00 [Information] Calling Get Unassigned from BlocksController
+2017-12-31 23:39:37.851 +00:00 [Information] Calling stored procedure [BlockCycle].[GetUnassignedBlocksByBlockCycleId] with blockCycleId : 8
+2017-12-31 23:39:38.739 +00:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-12-31 23:39:39.187 +00:00 [Information] Executed action "CroydonPestControl.API.Controllers.BlocksController.GetUnassigned (CroydonPestControl.API)" in 4214.0904ms
+2017-12-31 23:39:39.379 +00:00 [Information] Request finished in 4427.6375ms 200 application/json; charset=utf-8
+2017-12-31 23:40:52.864 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 23:40:52.864 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 23:40:53.108 +00:00 [Information] Request finished in 267.0571ms 200 
+2017-12-31 23:40:53.612 +00:00 [Information] Request finished in 793.6495ms 404 
+2017-12-31 23:43:17.985 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Properties/GetByBlockId/8%26670  
+2017-12-31 23:43:18.213 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.PropertiesController.GetByBlockId (CroydonPestControl.API)" with arguments (["8", "670"]) - ModelState is Valid
+2017-12-31 23:43:18.221 +00:00 [Information] Calling Get from PropertiesController
+2017-12-31 23:43:18.237 +00:00 [Information] Calling stored procedure [BlockCycle].[GetPropertiesByBlockId] with blockId : 8
+2017-12-31 23:43:18.881 +00:00 [Error] No columns were selected
+2017-12-31 23:43:19.093 +00:00 [Error] An unhandled exception has occurred: No columns were selected
+System.Exception: No columns were selected
+   at CroydonPestControl.Infrastructure.BlockCycleRepository.<GetPropertiesByBlockIdAsync>d__7.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.Infrastructure\BlockCycleRepository.cs:line 156
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.AppServices.PropertiesAppService.<GetPropertiesByBlockIdAsync>d__5.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\PropertiesAppService.cs:line 27
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.PropertiesController.<GetByBlockId>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\PropertiesController.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 23:43:19.285 +00:00 [Information] Request finished in 1312.2858ms 500 application/json
+2017-12-31 23:44:52.184 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 23:44:52.184 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 23:44:52.352 +00:00 [Information] Request finished in 191.5567ms 200 
+2017-12-31 23:44:52.744 +00:00 [Information] Request finished in 604.3022ms 404 
+2017-12-31 23:50:46.898 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 23:50:46.898 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 23:50:47.074 +00:00 [Information] Request finished in 201.6219ms 200 
+2017-12-31 23:50:47.486 +00:00 [Information] Request finished in 634.1242ms 404 
+2017-12-31 23:50:48.658 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Properties/GetByBlockId/8%26670  
+2017-12-31 23:50:48.918 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.PropertiesController.GetByBlockId (CroydonPestControl.API)" with arguments (["8", "670"]) - ModelState is Valid
+2017-12-31 23:50:48.926 +00:00 [Information] Calling Get from PropertiesController
+2017-12-31 23:50:48.946 +00:00 [Information] Calling stored procedure [BlockCycle].[GetPropertiesByBlockId] with blockId : 8
+2017-12-31 23:50:49.666 +00:00 [Error] No columns were selected
+2017-12-31 23:50:49.890 +00:00 [Error] An unhandled exception has occurred: No columns were selected
+System.Exception: No columns were selected
+   at CroydonPestControl.Infrastructure.BlockCycleRepository.<GetPropertiesByBlockIdAsync>d__7.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.Infrastructure\BlockCycleRepository.cs:line 156
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.AppServices.PropertiesAppService.<GetPropertiesByBlockIdAsync>d__5.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\PropertiesAppService.cs:line 27
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.PropertiesController.<GetByBlockId>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\PropertiesController.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 23:50:50.074 +00:00 [Information] Request finished in 1418.638ms 500 application/json
+2017-12-31 23:50:54.854 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Properties/GetByBlockId/8%26670  
+2017-12-31 23:50:54.862 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.PropertiesController.GetByBlockId (CroydonPestControl.API)" with arguments (["8", "670"]) - ModelState is Valid
+2017-12-31 23:50:54.866 +00:00 [Information] Calling Get from PropertiesController
+2017-12-31 23:50:54.866 +00:00 [Information] Calling stored procedure [BlockCycle].[GetPropertiesByBlockId] with blockId : 8
+2017-12-31 23:50:54.974 +00:00 [Error] No columns were selected
+2017-12-31 23:50:55.074 +00:00 [Error] An unhandled exception has occurred: No columns were selected
+System.Exception: No columns were selected
+   at CroydonPestControl.Infrastructure.BlockCycleRepository.<GetPropertiesByBlockIdAsync>d__7.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.Infrastructure\BlockCycleRepository.cs:line 156
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.AppServices.PropertiesAppService.<GetPropertiesByBlockIdAsync>d__5.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\CroydonPestControl.AppServices\PropertiesAppService.cs:line 27
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CroydonPestControl.API.Controllers.PropertiesController.<GetByBlockId>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Controllers\PropertiesController.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2017-12-31 23:50:55.090 +00:00 [Information] Request finished in 232.8276ms 500 application/json
+2017-12-31 23:52:01.474 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Properties/GetByBlockId/670%268  
+2017-12-31 23:52:01.474 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.PropertiesController.GetByBlockId (CroydonPestControl.API)" with arguments (["670", "8"]) - ModelState is Valid
+2017-12-31 23:52:01.474 +00:00 [Information] Calling Get from PropertiesController
+2017-12-31 23:52:01.478 +00:00 [Information] Calling stored procedure [BlockCycle].[GetPropertiesByBlockId] with blockId : 670
+2017-12-31 23:52:01.670 +00:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-12-31 23:52:01.738 +00:00 [Information] Executed action "CroydonPestControl.API.Controllers.PropertiesController.GetByBlockId (CroydonPestControl.API)" in 254.1407ms
+2017-12-31 23:52:01.742 +00:00 [Information] Request finished in 270.3831ms 200 application/json; charset=utf-8
+2017-12-31 23:55:49.807 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2017-12-31 23:55:49.807 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2017-12-31 23:55:50.055 +00:00 [Information] Request finished in 283.7084ms 200 
+2017-12-31 23:55:50.627 +00:00 [Information] Request finished in 881.2369ms 404 
+2017-12-31 23:55:53.467 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/Properties/GetByBlockId/670%268  
+2017-12-31 23:55:53.691 +00:00 [Information] Executing action method "CroydonPestControl.API.Controllers.PropertiesController.GetByBlockId (CroydonPestControl.API)" with arguments (["670", "8"]) - ModelState is Valid
+2017-12-31 23:55:53.699 +00:00 [Information] Calling Get from PropertiesController
+2017-12-31 23:55:53.719 +00:00 [Information] Calling stored procedure [BlockCycle].[GetPropertiesByBlockId] with blockId : 670
+2017-12-31 23:55:54.527 +00:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-12-31 23:55:54.739 +00:00 [Information] Executed action "CroydonPestControl.API.Controllers.PropertiesController.GetByBlockId (CroydonPestControl.API)" in 1202.9937ms
+2017-12-31 23:55:54.743 +00:00 [Information] Request finished in 1282.1638ms 200 application/json; charset=utf-8

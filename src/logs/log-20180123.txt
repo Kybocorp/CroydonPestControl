@@ -1,0 +1,263 @@
+2018-01-23 23:21:26.962 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/api/values  
+2018-01-23 23:21:26.962 +00:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:59004/  0
+2018-01-23 23:21:27.165 +00:00 [Information] Request finished in 227.0912ms 200 
+2018-01-23 23:21:27.568 +00:00 [Information] Request finished in 651.0415ms 404 
+2018-01-23 23:21:53.422 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui  
+2018-01-23 23:21:53.430 +00:00 [Information] Request finished in 9.6286ms 302 
+2018-01-23 23:21:53.440 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/index.html  
+2018-01-23 23:21:53.458 +00:00 [Information] Request finished in 18.0268ms 200 text/html
+2018-01-23 23:21:53.492 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery-1.8.0.min.js  
+2018-01-23 23:21:53.504 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/screen.css  
+2018-01-23 23:21:53.505 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/reset.css  
+2018-01-23 23:21:53.507 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/typography.css  
+2018-01-23 23:21:53.543 +00:00 [Information] Sending file. Request path: '"/css/reset.css"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.543 +00:00 [Information] Sending file. Request path: '"/css/screen.css"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.543 +00:00 [Information] Sending file. Request path: '"/lib/jquery-1.8.0.min.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.543 +00:00 [Information] Sending file. Request path: '"/css/typography.css"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.625 +00:00 [Information] Request finished in 104.5277ms 200 text/css
+2018-01-23 23:21:53.640 +00:00 [Information] Request finished in 130.5482ms 200 text/css
+2018-01-23 23:21:53.646 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.wiggle.min.js  
+2018-01-23 23:21:53.652 +00:00 [Information] Sending file. Request path: '"/lib/jquery.wiggle.min.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.631 +00:00 [Information] Request finished in 118.7129ms 200 text/css
+2018-01-23 23:21:53.684 +00:00 [Information] Request finished in 35.0125ms 200 application/javascript
+2018-01-23 23:21:53.689 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.ba-bbq.min.js  
+2018-01-23 23:21:53.693 +00:00 [Information] Sending file. Request path: '"/lib/jquery.ba-bbq.min.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.700 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/lodash.min.js  
+2018-01-23 23:21:53.709 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/object-assign-pollyfill.js  
+2018-01-23 23:21:53.732 +00:00 [Information] Sending file. Request path: '"/lib/object-assign-pollyfill.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.755 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/handlebars-4.0.5.js  
+2018-01-23 23:21:53.770 +00:00 [Information] Sending file. Request path: '"/lib/lodash.min.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.825 +00:00 [Information] Request finished in 105.5203ms 200 application/javascript
+2018-01-23 23:21:53.841 +00:00 [Information] Request finished in 163.7726ms 200 application/javascript
+2018-01-23 23:21:53.850 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/swagger-ui.min.js  
+2018-01-23 23:21:53.856 +00:00 [Information] Sending file. Request path: '"/lib/handlebars-4.0.5.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.858 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jquery.slideto.min.js  
+2018-01-23 23:21:53.869 +00:00 [Information] Sending file. Request path: '"/lib/jquery.slideto.min.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.907 +00:00 [Information] Request finished in 398.0291ms 200 application/javascript
+2018-01-23 23:21:53.922 +00:00 [Information] Sending file. Request path: '"/swagger-ui.min.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.936 +00:00 [Information] Request finished in 83.3071ms 200 application/javascript
+2018-01-23 23:21:53.944 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/highlight.9.1.0.pack.js  
+2018-01-23 23:21:53.948 +00:00 [Information] Request finished in 254.6231ms 200 application/javascript
+2018-01-23 23:21:53.948 +00:00 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.958 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/backbone-min.js  
+2018-01-23 23:21:53.975 +00:00 [Information] Sending file. Request path: '"/lib/backbone-min.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:53.976 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/highlight.9.1.0.pack_extended.js  
+2018-01-23 23:21:53.986 +00:00 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack_extended.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:54.010 +00:00 [Information] Request finished in 79.1551ms 200 application/javascript
+2018-01-23 23:21:54.015 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/jsoneditor.min.js  
+2018-01-23 23:21:54.021 +00:00 [Information] Sending file. Request path: '"/lib/jsoneditor.min.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:54.028 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/marked.js  
+2018-01-23 23:21:54.032 +00:00 [Information] Request finished in 63.4736ms 200 application/javascript
+2018-01-23 23:21:54.105 +00:00 [Information] Request finished in 150.0192ms 200 application/javascript
+2018-01-23 23:21:54.109 +00:00 [Information] Sending file. Request path: '"/lib/marked.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:54.135 +00:00 [Information] Request finished in 115.4593ms 200 application/javascript
+2018-01-23 23:21:54.163 +00:00 [Information] Request finished in 304.2902ms 200 application/javascript
+2018-01-23 23:21:54.199 +00:00 [Information] Request finished in 220.7824ms 200 application/javascript
+2018-01-23 23:21:54.206 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/images/logo_small.png  
+2018-01-23 23:21:54.238 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/lib/swagger-oauth.js  
+2018-01-23 23:21:54.247 +00:00 [Information] Sending file. Request path: '"/lib/swagger-oauth.js"'. Physical path: '"N/A"'
+2018-01-23 23:21:54.273 +00:00 [Information] Sending file. Request path: '"/images/logo_small.png"'. Physical path: '"N/A"'
+2018-01-23 23:21:54.292 +00:00 [Information] Request finished in 87.4246ms 200 application/javascript
+2018-01-23 23:21:54.307 +00:00 [Information] Request finished in 146.8943ms 200 image/png
+2018-01-23 23:21:54.308 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/css/print.css  
+2018-01-23 23:21:54.311 +00:00 [Information] Sending file. Request path: '"/css/print.css"'. Physical path: '"N/A"'
+2018-01-23 23:21:54.347 +00:00 [Information] Request finished in 71.0153ms 200 text/css
+2018-01-23 23:21:54.359 +00:00 [Information] Request finished in 629.6304ms 200 application/javascript
+2018-01-23 23:21:54.360 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/images/favicon-32x32.png  
+2018-01-23 23:21:54.363 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/v1/swagger.json  
+2018-01-23 23:21:54.365 +00:00 [Information] Sending file. Request path: '"/images/favicon-32x32.png"'. Physical path: '"N/A"'
+2018-01-23 23:21:54.376 +00:00 [Information] Request finished in 28.8777ms 200 image/png
+2018-01-23 23:21:54.380 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:59004/swagger/ui/images/favicon-16x16.png  
+2018-01-23 23:21:54.383 +00:00 [Information] Sending file. Request path: '"/images/favicon-16x16.png"'. Physical path: '"N/A"'
+2018-01-23 23:21:54.392 +00:00 [Information] Request finished in 13.4406ms 200 image/png
+2018-01-23 23:21:54.980 +00:00 [Information] Request finished in 613.4512ms 200 application/json
+2018-01-23 23:22:48.177 +00:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:59004/api/Blocks/AddBlockToBlockCycle application/json 241
+2018-01-23 23:22:48.422 +00:00 [Error] An unhandled exception has occurred: Status code cannot be set, response has already started.
+System.InvalidOperationException: Status code cannot be set, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Builder.Internal.ApplicationBuilder.<>c.<Build>b__16_0(HttpContext context)
+   at CroydonPestControl.API.Middlewares.OptionsMiddleware.<Invoke>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Middlewares\OptionsMiddleware.cs:line 21
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.SwaggerUi.Application.SwaggerUiMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.SwaggerUi.Application.RedirectMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.Swagger.Application.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2018-01-23 23:22:48.430 +00:00 [Warning] The response has already started, the error handler will not be executed.
+2018-01-23 23:22:48.446 +00:00 [Error] Connection id ""0HLB2N03AMQ96"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Status code cannot be set, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Builder.Internal.ApplicationBuilder.<>c.<Build>b__16_0(HttpContext context)
+   at CroydonPestControl.API.Middlewares.OptionsMiddleware.<Invoke>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Middlewares\OptionsMiddleware.cs:line 21
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.SwaggerUi.Application.SwaggerUiMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.SwaggerUi.Application.RedirectMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.Swagger.Application.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2018-01-23 23:22:48.456 +00:00 [Information] Request finished in 280.915ms 200 
+2018-01-23 23:23:14.619 +00:00 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:59004/api/Blocks/AddBlockToBlockCycle application/json 241
+2018-01-23 23:23:14.694 +00:00 [Error] An unhandled exception has occurred: Status code cannot be set, response has already started.
+System.InvalidOperationException: Status code cannot be set, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Builder.Internal.ApplicationBuilder.<>c.<Build>b__16_0(HttpContext context)
+   at CroydonPestControl.API.Middlewares.OptionsMiddleware.<Invoke>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Middlewares\OptionsMiddleware.cs:line 21
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.SwaggerUi.Application.SwaggerUiMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.SwaggerUi.Application.RedirectMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.Swagger.Application.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2018-01-23 23:23:14.706 +00:00 [Warning] The response has already started, the error handler will not be executed.
+2018-01-23 23:23:14.726 +00:00 [Error] Connection id ""0HLB2N03AMQ99"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Status code cannot be set, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Builder.Internal.ApplicationBuilder.<>c.<Build>b__16_0(HttpContext context)
+   at CroydonPestControl.API.Middlewares.OptionsMiddleware.<Invoke>d__3.MoveNext() in C:\Users\rtroncoso\Documents\Kybocorp\Projects\Pest Control Solution\CroydonPestControl\src\CroydonPestControl.API\Middlewares\OptionsMiddleware.cs:line 21
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.SwaggerUi.Application.SwaggerUiMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.SwaggerUi.Application.RedirectMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.Swagger.Application.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.RequestTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2018-01-23 23:23:14.746 +00:00 [Information] Request finished in 127.8725ms 200 
