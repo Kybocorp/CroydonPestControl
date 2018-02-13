@@ -70,6 +70,7 @@ namespace CroydonPestControl.API
             services.AddTransient<IBlockCycleAppService, BlockCycleAppService>();
             services.AddTransient<IBlocksAppService, BlocksAppService>();
             services.AddTransient<IPropertiesAppService, PropertiesAppService>();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
@@ -109,12 +110,17 @@ namespace CroydonPestControl.API
                 ConfigureAuth(app);
                 app.UseApplicationInsightsRequestTelemetry();
                 app.UseApplicationInsightsExceptionTelemetry();
+                app.UseCors(
+                        options => options.WithOrigins("*").AllowAnyOrigin()
+                       .AllowAnyHeader()
+                       .AllowAnyMethod()
+                            );
                 app.UseMvc();
                 app.UseSwagger();
                 app.UseSwaggerUi();
-                app.UseOptions();
+                //app.UseOptions();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 app.UseExceptionHandler(builder =>
                 {
@@ -131,7 +137,7 @@ namespace CroydonPestControl.API
                         await context.Response.Body.WriteAsync(Encoding.ASCII.GetBytes(err), 0, err.Length).ConfigureAwait(false);
                     });
                 });
-            }  
+            }
         }
     }
 }
