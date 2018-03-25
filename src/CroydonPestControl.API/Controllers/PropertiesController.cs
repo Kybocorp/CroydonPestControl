@@ -32,11 +32,11 @@ namespace CroydonPestControl.API.Controllers
         /// Get property next inspection dates
         /// </summary>
         /// <returns>list of dates</returns>
-        [HttpGet()]
-        public async Task<IActionResult> GetPropertyNextInspectionDates()
+        [HttpGet("{blockCycleId}&{propertyId}")]
+        public async Task<IActionResult> GetPropertyNextInspectionDates(int blockCycleId, int propertyId)
         {
-            _logger.LogInformation("Calling GetPropertyNextInspectionDatesAsync from InspectionController");
-            return Ok(await _propertiesAppService.GetPropertyNextInspectionDatesAsync());
+            _logger.LogInformation($"Calling GetPropertyNextInspectionDatesAsync from InspectionController {blockCycleId},{propertyId}");
+            return Ok(await _propertiesAppService.GetPropertyNextInspectionDatesAsync(blockCycleId, propertyId));
         }
 
         /// <summary>

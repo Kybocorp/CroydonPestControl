@@ -10,6 +10,6 @@ namespace CroydonPestControl.AppServices.Interfaces
         Task<IEnumerable<PropertiesViewModel>> GetPropertiesByBlockIdAsync(int blockId,int blockCycleId);
         Task<IEnumerable<InspectionViewModel>> GetInspectionsByPropertyIdAsync(int propertyId);
         Task UpdateBlockCyclePropertyAsync(PropertiesViewModel request);
-        Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync();
+        Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync(int blockCycleId, int propertyId);
     }
 }

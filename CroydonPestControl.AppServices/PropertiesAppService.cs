@@ -38,9 +38,9 @@ namespace CroydonPestControl.AppServices
             await _blockCycleRepository.UpdateBlockCyclePropertyAsync(_mapper.Map<Infrastructure.Models.PropertiesViewModel>(request));
         }
 
-        public async Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync()
+        public async Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync(int blockCycleId, int propertyId)
         {
-            return await _blockCycleRepository.GetPropertyNextInspectionDatesAsync();
+            return await _blockCycleRepository.GetPropertyNextInspectionDatesAsync(blockCycleId, propertyId);
         }
     }
 }

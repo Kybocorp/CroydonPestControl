@@ -207,14 +207,19 @@ namespace CroydonPestControl.Infrastructure
             }
         }
 
-        public async Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync()
+        public async Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync(int blockCycleId, int propertyId)
         {
             try
             {
-                _logger.LogInformation("Calling stored procedure dbo.GetPropertyNextInspectionDates ");
+                var param = new DynamicParameters();
+                param.Add("BlockCycleId", blockCycleId, dbType: DbType.Int32);
+                param.Add("PropertyId", propertyId, dbType: DbType.Int32);
+
+
+                _logger.LogInformation($"Calling stored procedure [BlockCycle].[GetPropertyNextInspectionDates] with BlockCycleId : {blockCycleId}");
                 return await WithConnection(async c =>
                 {
-                    return await c.QueryAsync<DateTime>("dbo.GetPropertyNextInspectionDates", commandType: CommandType.StoredProcedure);
+                    return await c.QueryAsync<DateTime>("BlockCycle.GetPropertyNextInspectionDates", param, commandType: CommandType.StoredProcedure);
                 });
             }
             catch (Exception ex)
