@@ -1,6 +1,7 @@
 ﻿using CroydonPestControl.Infrastructure.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System;
 
 namespace CroydonPestControl.Infrastructure.Interfaces
 {
@@ -14,5 +15,6 @@ namespace CroydonPestControl.Infrastructure.Interfaces
         Task<IEnumerable<PropertiesViewModel>> GetPropertiesByBlockIdAsync(int blockId,int blockCycleId);
         Task UpdateBlockCycleAsync(BlockCycle blockCycle);
         Task UpdateBlockCyclePropertyAsync(PropertiesViewModel updateBlockCyclePropertyRequest);
+        Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync();
     }
 }

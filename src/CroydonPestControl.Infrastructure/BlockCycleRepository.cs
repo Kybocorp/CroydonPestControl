@@ -206,5 +206,22 @@ namespace CroydonPestControl.Infrastructure
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync()
+        {
+            try
+            {
+                _logger.LogInformation("Calling stored procedure dbo.GetPropertyNextInspectionDates ");
+                return await WithConnection(async c =>
+                {
+                    return await c.QueryAsync<DateTime>("dbo.GetPropertyNextInspectionDates", commandType: CommandType.StoredProcedure);
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

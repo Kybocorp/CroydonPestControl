@@ -1,4 +1,5 @@
 ﻿using CroydonPestControl.AppServices.Models;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -9,5 +10,6 @@ namespace CroydonPestControl.AppServices.Interfaces
         Task<IEnumerable<PropertiesViewModel>> GetPropertiesByBlockIdAsync(int blockId,int blockCycleId);
         Task<IEnumerable<InspectionViewModel>> GetInspectionsByPropertyIdAsync(int propertyId);
         Task UpdateBlockCyclePropertyAsync(PropertiesViewModel request);
+        Task<IEnumerable<DateTime>> GetPropertyNextInspectionDatesAsync();
     }
 }

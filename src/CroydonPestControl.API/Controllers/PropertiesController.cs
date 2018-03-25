@@ -29,14 +29,25 @@ namespace CroydonPestControl.API.Controllers
         }
 
         /// <summary>
+        /// Get property next inspection dates
+        /// </summary>
+        /// <returns>list of dates</returns>
+        [HttpGet()]
+        public async Task<IActionResult> GetPropertyNextInspectionDates()
+        {
+            _logger.LogInformation("Calling GetPropertyNextInspectionDatesAsync from InspectionController");
+            return Ok(await _propertiesAppService.GetPropertyNextInspectionDatesAsync());
+        }
+
+        /// <summary>
         /// Get inspections by propertyId
         /// </summary>
         /// <returns>list of Inspection object</returns>
         [HttpGet("{propertyId}")]
-        public async Task<IEnumerable<InspectionViewModel>> GetInspectionsByPropertyId(int propertyId)
+        public async Task<IActionResult> GetInspectionsByPropertyId(int propertyId)
         {
             _logger.LogInformation("Calling GetInspectionsByUserId from InspectionController with UserId : {0}", propertyId);
-            return await _propertiesAppService.GetInspectionsByPropertyIdAsync(propertyId);
+            return Ok(await _propertiesAppService.GetInspectionsByPropertyIdAsync(propertyId));
         }
 
         /// <summary>
